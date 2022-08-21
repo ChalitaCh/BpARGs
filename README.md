@@ -9,7 +9,7 @@ This project aims to identify both novel and characterised ARGs, and the prevale
 ## Getting Started
 
 ### Dependencies
-All the softwares and packages used in this project are listed. The dependencies for installation are according to the recommended guideline of each softwares.
+All the softwares and packages used in this project are listed. The dependencies for installation are according to the recommended guideline of each software.
 * Softwares:
     * [Unicycler](https://github.com/rrwick/Unicycler)
     * [Quast](https://github.com/ablab/quast)
@@ -23,13 +23,28 @@ All the softwares and packages used in this project are listed. The dependencies
     * [PAML](https://github.com/abacus-gene/paml)
     * [BactDating](https://github.com/xavierdidelot/BactDating)
 * R version 4.2.0
-* R packages: ggplot2, tidyverse, ape, phytools, reshape2, treeio, ggtree, chopper (fas2phy), doParallel
+* R packages: ggplot2, tidyverse, ape, phytools, reshape2, R.utils, ggpubr, treeio, ggtree, chopper (fas2phy), doParallel
 
 ### Code
+
+* ARIBA_array_run.sh : to identify ARGs in the whole-genome sequencing using ARIBA and customised database
+* ARIBA_pull_genes.sh : to pull the ARGs identified from ARIBA result for further analyses, creating a single fasta file of the ARGs.
+* ARIBA_summary.sh : to contanate all the genetic variations results from ARIBA together for further analyses
+* codeml.ctl : an example of control file used to test for selection that acting on the gene using PAML. To run this analysis, please ensure that the sequence alignment, gene phylogeny and the control file are all in the same directory before execute the following command;
+'''
+../paml4.8/bin/codeml
+
+'''
+* genes_process.sh : to create a gene sequence alignment and phylogeny generated from 'ARIBA_pull_genes.sh' and later used in conjunction with 'codeml.ctl'
+* Gubbins_process.sh : to generate the frequency table of recombination events happended in each genome coordinate
+* Gubbins_visualise.R : to identify the recombination hotspots and genes present in them.
+* Gubbins_enrichment.R : to test for significant likelihood of the ARGs and mobile genetic elements present in the recombination hotspots compared to non-hotspots in each lineage.
+* mole_dating_function.R : a divergent-time estimation function, developing from the 'bactdate' function in BactDating package to run using multicore cpu.
+* mole_dating_parallel.R : to run the molecular dating using multicore cpu.
+* PAML_LK : to calculate the log-likelihood ratio statistic test and AIC score of the models'log-likelihood.
+
 
 ## Author
 
 Chalita Chomkatekaew
 [@CChomkatekaew](https://twitter.com/CChomkatekaew)
-
-## Acknowledgments
