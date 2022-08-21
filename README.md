@@ -9,38 +9,27 @@ This project aims to identify both novel and characterised ARGs, and the prevale
 ## Getting Started
 
 ### Dependencies
+All the softwares and packages used in this project are listed. The dependencies for installation are according to the recommended guideline of each softwares.
+* Softwares:
+    * [Unicycler](https://github.com/rrwick/Unicycler)
+    * [Quast](https://github.com/ablab/quast)
+    * [Prokka](https://github.com/tseemann/prokka)
+    * [PopPUNK](https://poppunk.readthedocs.io/en/latest/)
+    * [Mafft](https://mafft.cbrc.jp/alignment/software/)
+    * [SNP-sites](https://github.com/sanger-pathogens/snp-sites)
+    * [IQ-TREE](http://www.iqtree.org)
+    * [ARIBA](https://github.com/sanger-pathogens/ariba)
+    * [Gubbins](https://github.com/nickjcroucher/gubbins)
+    * [PAML](https://github.com/abacus-gene/paml)
+    * [BactDating](https://github.com/xavierdidelot/BactDating)
+* R version 4.2.0
+* R packages: ggplot2, tidyverse, ape, phytools, reshape2, treeio, ggtree, chopper (fas2phy), doParallel
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
-
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+### Code
 
 ## Author
 
 Chalita Chomkatekaew
 [@CChomkatekaew](https://twitter.com/CChomkatekaew)
-
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
 
 ## Acknowledgments
