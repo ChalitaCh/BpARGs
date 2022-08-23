@@ -19,7 +19,7 @@ All the softwares and packages used in this project are listed. The dependencies
     * [SNP-sites](https://github.com/sanger-pathogens/snp-sites)
     * [IQ-TREE](http://www.iqtree.org)
     * [ARIBA](https://github.com/sanger-pathogens/ariba)
-    * [Panaroo] (https://gtonkinhill.github.io/panaroo/#/)
+    * [Panaroo](https://gtonkinhill.github.io/panaroo/#/)
     * [Gubbins](https://github.com/nickjcroucher/gubbins)
     * [PAML](https://github.com/abacus-gene/paml)
     * [BactDating](https://github.com/xavierdidelot/BactDating)
