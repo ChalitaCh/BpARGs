@@ -19,6 +19,7 @@ All the softwares and packages used in this project are listed. The dependencies
     * [SNP-sites](https://github.com/sanger-pathogens/snp-sites)
     * [IQ-TREE](http://www.iqtree.org)
     * [ARIBA](https://github.com/sanger-pathogens/ariba)
+    * [Panaroo] (https://gtonkinhill.github.io/panaroo/#/)
     * [Gubbins](https://github.com/nickjcroucher/gubbins)
     * [PAML](https://github.com/abacus-gene/paml)
     * [BactDating](https://github.com/xavierdidelot/BactDating)
@@ -26,6 +27,8 @@ All the softwares and packages used in this project are listed. The dependencies
 * R packages: ggplot2, tidyverse, ape, phytools, reshape2, R.utils, ggpubr, treeio, ggtree, chopper (fas2phy), doParallel
 
 ### Code
+
+Please ensure that the path directory is in the correct one. Some scripts might require the results from previous script before.
 
 * ARIBA_array_run.sh : to identify ARGs in the whole-genome sequencing using ARIBA and customised database
 * ARIBA_pull_genes.sh : to pull the ARGs identified from ARIBA result for further analyses, creating a single fasta file of the ARGs.
@@ -40,7 +43,10 @@ All the softwares and packages used in this project are listed. The dependencies
 * Gubbins_enrichment.R : to test for significant likelihood of the ARGs and mobile genetic elements present in the recombination hotspots compared to non-hotspots in each lineage.
 * mole_dating_function.R : a divergent-time estimation function, developing from the `bactdate` function in BactDating package to run using multicore cpu.
 * mole_dating_parallel.R : to run the molecular dating using multicore cpu.
+* Overall_dataset_F1B.R : R script to plot the figure 1B in the report, representing the data distribution across year and sources.
 * PAML_LK : to calculate the log-likelihood ratio statistic test and AIC score of the models'log-likelihood.
+* SNPs_visualisation_FS1_TS3.R : R script to visualise the dirtribution of SNPs variantions seen in the dataset, both along the nucleotide sequence and the unique number of variants found (Figure S1 and Table S3). To run this script, please identify the variants of each isolate using `Ariba_array_run.sh`, then merge the results together using `Ariba_summary.sh`. The file name and absolute path may need to be changed accordingly.
+* Time_trees_F3.R : Time-calibrated phylogeny's visualisation with their associated data/variants (Figure 3).
 
 
 ## Author
