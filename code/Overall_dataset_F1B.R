@@ -24,7 +24,9 @@ metadata <- read.csv("../data/BP.3341.metadata.source.edited2.csv", header = TRU
 #ensure that the year is continuous variable, permitting the custom axis break 
 metadata$year <- as.numeric(metadata$year)
 
+#create a custom x-axis break
 breaks_custom <- seq(1935,2018, by = 5)
+breaks_custom <- c(breaks_custom, NA)
 
 p <- ggplot(metadata, aes(x =as.factor(year), fill = Source)) +
   scale_fill_manual(name = "Source",
